@@ -1,0 +1,45 @@
+// Qudurat Configuration
+// Generated from top_200_exam_universe_seed.csv
+
+export const EXAM_CONFIG = {
+  examId: "EXAM126",
+  slug: "qudurat",
+  name: "Qudurat",
+  fullName: "General Aptitude Test Saudi",
+  alias: "General Aptitude Test Saudi",
+  family: "Qiyas",
+  category: "Admissions",
+  subcategory: "University admissions",
+  country: "Saudi Arabia",
+  region: "MENA",
+  languages: ["Arabic","English"],
+  estimatedAnnualTakers: "high",
+  testingWindow: "Year-round windows",
+  schedulePattern: "Multiple dates",
+  ageGroup: "16-22",
+  targetUser: "University applicant",
+  delivery: "Computer/paper",
+  questionTypes: ["MCQ"],
+  adaptivity: "Linear",
+  sections: "Verbal + quantitative",
+  scoringMode: "Score-based",
+  essayOrSpeaking: "No",
+  ipRisk: "Low",
+  contentReuse: "general_admissions",
+  uiEngine: "timed_objective",
+  monetizationPotential: "Medium",
+  tier: "Tier 4",
+  launchWave: "Wave 6",
+  themeColor: "#1E40AF",
+  themeColorDark: "#1E3A8A",
+  localizationComplexity: "Medium",
+  offlineNeeded: false,
+  mobileFirst: true,
+  locale: "ar",
+  isRTL: true,
+  freemiumGate: {
+    dailyQuestions: 10,
+  },
+} as const;
+
+export type ExamConfig = typeof EXAM_CONFIG;
